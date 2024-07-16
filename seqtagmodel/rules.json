@@ -1,0 +1,146 @@
+{
+    "0": {
+        "title": "0",
+        "exp": "NO_ERROR"
+    },
+    "B-rule_1": {
+        "title": "DE/DA Ekinin Yazımı",
+        "exp": "Bağlaç olan da / de ayrı yazılır.",
+        "color": "red"
+    },
+    "B-rule_2": {
+        "title": "DE/DA Ekinin Yazımı",
+        "exp": "Bağlaç olan da / de ünlü uyumuna uymalıdır.",
+        "color": "red"
+    },
+    "B-rule_3": {
+        "title": "DE/DA Ekinin Yazımı",
+        "exp": "Ayrı yazılan da / de hiçbir zaman ta / te biçiminde yazılmaz.",
+        "color": "red"
+    },
+    "B-rule_4": {
+        "title": "DE/DA Ekinin Yazımı",
+        "exp": "Ya sözüyle birlikte kullanılan da her zaman ayrı yazılır.",
+        "color": "red"
+    },
+    "B-rule_5": {
+        "title": "DE/DA Ekinin Yazımı",
+        "exp": "Da / de bağlacını kendisinden önceki kelimeden kesme ile ayırmak yanlıştır.",
+        "color": "red"
+    },
+    "B-rule_6": {
+        "title": "DE/DA Ekinin Yazımı",
+        "exp": "Bulunma durumu eki getirildiği kelimeye bitişik yazılır.",
+        "color": "red"
+    },
+    "B-rule_7": {
+        "title": "Kİ Bağlacının Yazımı",
+        "exp": "Bağlaç olan ki her zaman ayrı yazılır.",
+        "color": "navy"
+    },
+    "B-rule_8": {
+        "title": "Kİ Bağlacının Yazımı",
+        "exp": "Birkaç örnekte ki bağlacı kalıplaşmış olduğu için bitişik yazılır: belki, çünkü, hâlbuki, mademki, meğerki, oysaki, sanki.",
+        "color": "navy"
+    },
+    "B-rule_9": {
+        "title": "Yabancı Kökenli Kelimelerin Yazımı",
+        "exp": "Çift ünsüz harfle başlayan Batı kökenli alıntılar, ünsüzler arasına ünlü konulmadan yazılır.",
+        "color": "purple"
+    },
+    "B-rule_10": {
+        "title": "İkilemelerin Yazımı",
+        "exp": "Aynı sözcükten oluşan ikilemeler ayrı yazılır.",
+        "color": "orange"
+    },
+    "B-rule_11": {
+        "title": "Soru Eklerinin Yazımı",
+        "exp": "Soru eki olan mı, mi, mu, mü ayrı yazılır.",
+        "color": "green"
+    },
+    "B-rule_12": {
+        "title": "Ünlü Uyumu",
+        "exp": "A / e, ecek / ecek, eyim / eyim, elim / elim, en / en vb. eklerden önce gelen ünlü veya ekin geniş ünlüsü söyleyişe bakılmaksızın a / e ile yazılır.",
+        "color": "orange"
+    },
+    "B-rule_13": {
+        "title": "İki Heceli Kelimlerin Yazımı",
+        "exp": "İki heceli bazı kelimeler ünlüyle başlayan bir ek aldıklarında ikinci hecelerindeki dar ünlüler düşer.",
+        "color": "pink"
+    },
+    "B-rule_14": {
+        "title": "İki Heceli Kelimlerin Yazımı",
+        "exp": "İçeri, dışarı, ileri, şura, bura, ora, yukarı, aşağı gibi sözler ek aldıklarında sonlarında bulunan ünlüler düşmez.",
+        "color": "pink"
+    },
+    "B-rule_15": {
+        "title": "Yabancı Kökenli Kelimelerin Yazımı",
+        "exp": "Alıntı kelimeler ünlü ile başlayan bir ek aldıklarında kelime sonlarındaki sert ünsüzler yumuşar.",
+        "color": "purple"
+    },
+    "B-rule_16": {
+        "title": "Yabancı Kökenli Kelimelerin Yazımı",
+        "exp": "Bazı alıntı kelimelerde yumuşama olmaz: ahlak / ahlakın, cumhuriyet / cumhuriyete, evrak / evrakı, hukuk / hukuku, ittifak / ittifaka, sepet / sepeti, tank / tankı vb.",
+        "color": "purple"
+    },
+    "B-rule_17": {
+        "title": "Katkısız Eylem Yapılarının Yazımı",
+        "exp": "Etmek, edilmek, eylemek, olmak, olunmak yardımcı fiilleriyle kurulan birleşik fiiller, ilk kelimesinde herhangi bir ses düşmesi veya türemesine uğramazsa ayrı yazılır.",
+        "color": "blue"
+    },
+    "B-rule_18": {
+        "title": "Katkısız Eylem Yapılarının Yazımı",
+        "exp": "Özgün biçimleri tek heceli bazı Arapça kökenli kelimeler yardımcı fiilleriyle birleşirken ses düşmesine, ses değişmesine veya ses türemesine uğradıklarında bitişik yazılır.",
+        "color": "blue"
+    },
+    "B-rule_19": {
+        "title": "Birleşik Kelimlerin Yazımı",
+        "exp": "Kelimelerden her ikisi veya ikincisi, birleşme sırasında anlam değişmesine uğradığında bu tür birleşik kelimeler bitişik yazılır.",
+        "color": "turquoise"
+    },
+    "B-rule_20": {
+        "title": "Birleşik Kelimlerin Yazımı",
+        "exp": "-A, -e, -ı, -i, -u, -ü zarf-fiil ekleriyle bilmek, vermek, kalmak, durmak, gelmek ve yazmak fiilleriyle yapılan tasvirî fiiller bitişik yazılır.",
+        "color": "turquoise"
+    },
+    "B-rule_21": {
+        "title": "Birleşik Kelimlerin Yazımı",
+        "exp": "Hane, name, zade kelimeleriyle oluşturulan birleşik kelimeler bitişik yazılır.",
+        "color": "turquoise"
+    },
+    "B-rule_22": {
+        "title": "Birleşik Kelimlerin Yazımı",
+        "exp": "Biraz, birçok, birçoğu, birkaç, birkaçı, birtakım, herhangi, hiçbir, hiçbiri belirsizlik sıfat ve zamirleri de gelenekleşmiş olarak bitişik yazılır.",
+        "color": "orange"
+    },
+    "B-rule_23": {
+        "title": "Büyük Harf Kullanımı",
+        "exp": "Cümle başında bulunan kelimenin ilk harfi büyük harfle yazılır.",
+        "color": "orange"
+    },
+    "B-rule_24": {
+        "title": "Yabancı Kökenli Kelimelerin Yazımı",
+        "exp": "Arapça ve Farsçadan dilimize giren birtakım kelimelerle özel adlarda bulunan ince g, k ünsüzlerinden sonra gelen a ve u ünlüleri üzerine konur.",
+        "color": "orange"
+    },
+    "B-rule_25": {
+        "title": "KURAL-25",
+        "exp": "not defined",
+        "color": "orange"
+    },
+    "B-rule_26": {
+        "title": "Büyük Harf Kullanımı",
+        "exp": "Cümle büyük harfle başlar ve bir cümledeki kelimeler arasında boşluk bırakılmalıdır.",
+        "color": "salmon"
+    },
+    "B-rule_27": {
+        "title": "Özel İsimlerin Yazımı",
+        "exp": "Özel isimler büyük harfle yazılır.",
+        "color": "salmon"
+    },
+    "B-rule_28": {
+        "title": "İmla Hatası",
+        "exp": "Yazım yanlışı.",
+        "color": "salmon"
+    }
+}

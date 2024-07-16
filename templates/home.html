@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+{% block content %}
+    {% load static %}
+    <!DOCTYPE html>
+    <html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GECTurk</title>
+        <link
+                rel="stylesheet"
+                href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+        />
+        <link
+                rel="stylesheet"
+                href="{% static 'css/main.css' %}"
+        />
+        <script src="{% static 'bootstrap/js/jquery-3.6.1.min.js' %}">
+        </script>
+        <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}">
+        </script>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:;">
+        <link rel="icon" href="static/img/indir.ico"/>
+        <style>
+            .cc-license {
+                font-size: 0.6em;
+                text-align: center;
+                margin-top: 235px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container d-grid gap-3">
+        <!-- HEADER -->
+        <center>
+            <div class="underlined">
+                <h1>
+                    <center>GECTurk</center>
+                </h1>
+            </div>
+        </center>
+        <div class="row px-3">
+            <form action="{% url 'send_data' %}" method="POST">
+                {% csrf_token %}
+                <div class="row d-grip gap-2">
+                    <div class="row py-2 my-3">
+                        <div class="col-lg-6">
+                            <label class="form-label" for="inputText">Girdi</label>
+                            <textarea
+                                    id="inputText"
+                                    name="input"
+                                    class="form-control"
+                                    placeholder="Enter text..."
+                                    spellcheck="false"
+                                    rows="10"
+                                    cols="80">{% if input %}{{ input }}{% endif %}</textarea>
+                            <input type="hidden" name="dataType" value="{{ "sendtext" }}">
+                            <br/>
+
+                            <button type="submit" class="btn btn-primary float-end" onclick="visibleFunction()">
+                                Yanlışları Bul
+                            </button>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="output-label-and-copy-text-button">
+                                <label class="form-label">Çıktı</label>
+
+                                <button type="button" class="CopyText" onclick="copyDivToClipboard()">Metni Kopyala
+                                </button>
+                            </div>
+                            <div class="output-container border-top py-2" id="copy">
+                                {% if output %}{{ output|safe }}{% endif %}</div>
+
+                            <br/>
+                        </div>
+                    </div>
+
+                </div>
+                <script src="{% static 'js/script.js' %}"></script>
+            </form>
+        </div>
+
+        {% if output %}
+            <form method="post" action="{% url 'send_data' %}">
+                {% csrf_token %}
+                <button type="button" id="show-id" onclick="openPopup()" class="StillWrong" role="button">Bu Hala
+                    Hatalı!
+                </button>
+                <div class="popup" id="popup">
+                    <textarea type="text" placeholder="Lütfen Yanlış Olan Cümlenin Doğrusunu Girin" id="feedback"
+                              name="feedback" class="feedback" rows="11" cols="18"></textarea>
+                    <input type="hidden" name="dataType" value="{{ "sendapi" }}">
+                    <div class="button-container">
+                        <button type="button" class=SaveButtonStillWrong id="save" style="display: none"
+                                onclick="changeName()">Kaydet
+                        </button>
+                        <button type="submit" class=ExitButtonStillWrong id="exit" style="display: none"
+                                onclick="closePopup()">Çıkış
+                        </button>
+                    </div>
+
+                </div>
+                <input type="hidden" name="text_id" value="{{ text_id }}">
+
+            </form>
+        {% endif %}
+
+        <form method="post" action="{% url 'send_data' %}">
+            {% csrf_token %}
+
+            <!-- GERİ BİLDİRİM VERMEK İSTER MİSİN? BUTTON -->
+            <button type="button" class="Feedback" onclick="opengPopup()"><span>Geri Bildirim Vermek İster Misin?</span>
+            </button>
+
+            <!-- GERİ BİLDİRİM VERMEK İSTER MİSİN? POPUP -->
+            <center>
+                <div class="gpopup" id="gpopup">
+                    <textarea type="text" placeholder="Geri Bildiriminizi Girin" id="gfeedback" name="gfeedback"
+                              class="gfeedback" rows="11" cols="18">{{ gfeedback }}</textarea>
+                    <input type="hidden" name="dataType" value="{{ "sendfeedback" }}">
+                    <div class="button-container">
+                        <button type="button" class=SaveButton id="saveg" style="display: none" onclick="changegName()">
+                            Kaydet
+                        </button>
+                        <button type="submit" class=ExitButton id="exitg" style="display: none" onclick="closePopup()">
+                            Çıkış
+                        </button>
+
+                    </div>
+                </div>
+
+            </center>
+        </form>
+    </div>
+    <div class="cc-license">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+            <span property="dct:title">GECTurk Web</span> by
+            <a property="cc:attributionName" rel="cc:attributionURL" href="https://gglab-ku.github.io/">GGLab</a> is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+                CC BY 4.0
+                <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+                <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+            </a>
+        </p>
+    </div>
+    </body>
+    </html>
+    <script>
+        let popup = document.getElementById("popup");
+        let gpopup = document.getElementById("gpopup");
+        let save = document.getElementById("save");
+        let saveg = document.getElementById("saveg");
+        let exit = document.getElementById("exit");
+        let exitg = document.getElementById("exitg");
+
+
+        let feedbackForm = document.getElementById("feedback-form");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+            save.style.display = "block";
+            exit.style.display = "block";
+            saveg.style.display = "none";
+            exitg.style.display = "none";
+            gpopup.classList.remove("open-g-popup");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+
+        function opengPopup() {
+            gpopup.classList.add("open-g-popup");
+            saveg.style.display = "block";
+            exitg.style.display = "block";
+            save.style.display = "none";
+            exit.style.display = "none";
+            popup.classList.remove("open-popup");
+        }
+
+        function closegPopup() {
+            gpopup.classList.remove("open-g-popup");
+
+        }
+
+        function changegName() {
+            saveg.addEventListener('click', function handleClick() {
+                saveg.textContent = 'Kaydedildi';
+            });
+        }
+
+        function changeName() {
+            save.addEventListener('click', function handleClick() {
+                save.textContent = 'Kaydedildi';
+            });
+        }
+
+    </script>
+{% endblock %}

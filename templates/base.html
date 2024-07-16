@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>GECTurk</title>
+    <script type="text/javascript" language="javascript" src="{% static 'functions.js' %}"></script>
+    <link rel="icon" href="static/img/indir.ico"/>
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>

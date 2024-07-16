@@ -1,0 +1,76 @@
+from seqtagmodel.correction_package.rules import *
+
+# format: (rule, probability, name)
+# Rule config for all 25 rules with their names and probabilities
+
+rule_config = [
+    (rule_1, 0.8, "rule_1"),
+    (rule_2, 0.01, "rule_2"),
+    (rule_3, 0.01, "rule_3"),
+    (rule_4, 0.95, "rule_4"),
+    (rule_5, 0.75, "rule_5"),
+    (rule_6, 0.75, "rule_6"),
+    (rule_7, 0.75, "rule_7"),
+    (rule_8, 0.95, "rule_8"),
+    (rule_9, 0.02, "rule_9"),
+    (rule_10, 0.15, "rule_10"),
+    (rule_11, 0.9, "rule_11"),
+    (rule_12, 0.95, "rule_12"),
+    (rule_13, 0.5, "rule_13"),
+    (rule_14, 0.95, "rule_14"),
+    (rule_15, 0.15, "rule_15"),
+    (rule_16, 0.95, "rule_16"),
+    (rule_17, 0.2, "rule_17"),
+    (rule_18, 0.5, "rule_18"),
+    (rule_19, 0.95, "rule_19"),
+    (rule_20, 0.9, "rule_20"),
+    (rule_21, 0.05, "rule_21"),
+    (rule_22, 0.95, "rule_22"),
+    (rule_23, 0.02, "rule_23"),
+    (rule_24, 0.99, "rule_24"),
+    (rule_25, 0.8, "rule_25"),
+]
+
+full_prob_rule_config = [
+    (rule_1, 1, "rule_1"),
+    (rule_2, 1, "rule_2"),
+    (rule_3, 1, "rule_3"),
+    (rule_4, 1, "rule_4"),
+    (rule_5, 1, "rule_5"),
+    (rule_6, 1, "rule_6"),
+    (rule_7, 1, "rule_7"),
+    (rule_8, 1, "rule_8"),
+    (rule_9, 1, "rule_9"),
+    (rule_10, 1, "rule_10"),
+    (rule_11, 1, "rule_11"),
+    (rule_12, 1, "rule_12"),
+    (rule_13, 1, "rule_13"),
+    (rule_14, 1, "rule_14"),
+    (rule_15, 1, "rule_15"),
+    (rule_16, 1, "rule_16"),
+    (rule_17, 1, "rule_17"),
+    (rule_18, 1, "rule_18"),
+    (rule_19, 1, "rule_19"),
+    (rule_20, 1, "rule_20"),
+    (rule_21, 1, "rule_21"),
+    (rule_22, 1, "rule_22"),
+    (rule_23, 1, "rule_23"),
+    (rule_24, 1, "rule_24"),
+    (rule_25, 1, "rule_25"),
+]
+
+space_adding_rules = [rule_config[5][2],
+                      rule_config[7][2],
+                      rule_config[17][2],
+                      rule_config[18][2],
+                      rule_config[19][2],
+                      rule_config[20][2],
+                      rule_config[21][2]]
+
+space_removing_rules = [rule_config[0][2],
+                        rule_config[3][2],
+                        rule_config[4][2],
+                        rule_config[6][2],
+                        rule_config[9][2],
+                        rule_config[10][2],
+                        rule_config[16][2]]
