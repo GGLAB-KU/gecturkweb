@@ -53,7 +53,7 @@ To set up GECTurk WEB locally, follow these steps:
    
 2. **Download the Model**
 
-    Download the model file from [here](https://drive.google.com/file/d/1-1) and place it in the `gecturkweb/seqtagmodel/sequence-tagger` directory.
+    Download the model file from [here](https://drive.google.com/drive/folders/1kYBIkAyP7IgPt8EEN9K90qcss_5cFb_b?usp=sharing) and place it in the `gecturkweb/seqtagmodel/sequence-tagger` directory.
 
 
 3. **Install Dependencies**
@@ -98,7 +98,8 @@ GECTurk WEB consists of the following three components:
 
 1. **Frontend**: Built using the Bootstrap framework for a responsive and user-friendly interface.
 2. **Backend**: Powered by Django, a high-level Python web framework.
-3. **Grammatical & Spelling Correction Module**: Utilizes the SequenceTagger model for detecting and correcting grammatical errors and integrates TrNlp and ZemberekNLP for spelling correction.
+3. **Grammatical Correction Module**: Utilizes the SequenceTagger model for detecting and correcting grammatical errors.
+4. **Spelling Correction Module**: Integrates TrNlp and ZemberekNLP for spelling correction.
 
 ## Evaluation
 
