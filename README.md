@@ -1,3 +1,7 @@
+Your README is comprehensive and well-organized. Here are a few enhancements and revisions to improve clarity and readability:
+
+---
+
 # GECTurk WEB: An Explainable Online Platform for Turkish Grammatical Error Detection and Correction
 
 ## Table of Contents
@@ -21,15 +25,8 @@
 <p align="center">
 <img src="ui_screenshot.png" width="100%">
 <br>
-<small><b> Figure 1: The screenshot of UI after user entering an input. 1- Girdi (Input): The input area for the user. 2- Yanlışları
-Bul (Find Errors): A button which is pressed after entering an input. 3- Çıktı (Output): The output area for the
-tagged and corrected text. 4- Pop-up: Each corrected word is represented as button. When clicked the violated rule, i.e., error type, is shown. 5- Metni Kopyala
-(Copy Text): A button for copying corrected text. 6- Bu Hala Hatalı (Still Erroneous): A button for giving feedback
-in case the user thinks the output still contains errors. When clicked, a pop-up is shown and user is expected to
-write the corrected version. 7- Geri Bildirim Vermek  İster Misin? (Give Feedback): A button for collecting general
-suggestions. </b></small>
+<small><b>Figure 1: The screenshot of UI after user entering an input. 1- Girdi (Input): The input area for the user. 2- Yanlışları Bul (Find Errors): A button pressed after entering an input. 3- Çıktı (Output): The output area for the tagged and corrected text. 4- Pop-up: Each corrected word is represented as a button. When clicked, the violated rule, i.e., error type, is shown. 5- Metni Kopyala (Copy Text): A button for copying corrected text. 6- Bu Hala Hatalı (Still Erroneous): A button for giving feedback if the user thinks the output still contains errors. When clicked, a pop-up is shown and the user is expected to write the corrected version. 7- Geri Bildirim Vermek İster Misin? (Give Feedback): A button for collecting general suggestions.</b></small>
 </p>
-
 
 ## Features
 
@@ -50,15 +47,14 @@ To set up GECTurk WEB locally, follow these steps:
    git clone https://github.com/GGLAB-KU/gecturkweb.git
    cd gecturkweb
    ```
-   
+
 2. **Download the Model**
 
-    Download the model file from [here](https://drive.google.com/drive/folders/1kYBIkAyP7IgPt8EEN9K90qcss_5cFb_b?usp=sharing) and place it in the `gecturkweb/seqtagmodel/sequence-tagger` directory.
-
+    Download the model file from [Hugging Face](https://huggingface.co/GGLab/gec-tr-seq-tagger) and place it in the `gecturkweb/seqtagmodel/sequence-tagger` directory.
 
 3. **Install Dependencies**
 
-   Ensure you have Python and pip installed. Then, install the required packages:
+   Ensure you have Python 3.11 and pip 24.1.2 installed. Then, install the required packages:
 
    ```bash
    pip install -r requirements.txt
@@ -115,9 +111,12 @@ GECTurk WEB is licensed under the [CC BY-SA 4.0](https://creativecommons.org/lic
 
 ## Acknowledgements
 
-GECTurk WEB is developed by Ali Gebeşçe and Gözde Gül Şahin at the Computer Engineering Department, Koç University, GGLab, Istanbul, Turkey.
+- GECTurk WEB was developed as part of the senior design project by Ali Gebeşçe, Asu Tutku Gökçek, Gökçe Sevimli, Yakup Enes Güven at the Computer Engineering Department of Koç University, under the supervision of Assistant Professor Gözde Gül Şahin. Subsequent enhancements were made by Ali Gebeşçe and Assistant Professor Gözde Gül Şahin at [GGLab](https://gglab-ku.github.io/).
+
+- The GECTurk Model utilized by GECTurk WEB was developed by Atakan Kara, Farrin Marouf Safian, Andrew Bond, and Gözde Gül Şahin. For more details, please refer to the [paper](https://aclanthology.org/2023.findings-ijcnlp.26/) and [GitHub repository](https://github.com/GGLAB-KU/gecturk) of GECTurk.
+
+- This project is supported by the [Scientific and Technological Research Council of Türkiye (TÜBİTAK)](https://www.tubitak.gov.tr/) as part of the project titled *Automatic Learning of Procedural Language from Natural Language Instructions for Intelligent Assistance* (Project No. 121C132).
 
 ## Contact
 
-For any questions or support, please contact [Ali Gebeşçe](mailto:agebesce17@ku.edu.tr).
-
+For any questions or support, please contact [Ali Gebeşçe](mailto:aligebesce13@gmail.com).
