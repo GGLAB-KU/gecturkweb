@@ -111,7 +111,7 @@ GECTurk WEB is licensed under the [CC BY-SA 4.0](https://creativecommons.org/lic
 
 ## Acknowledgements
 
-- GECTurk WEB was developed as part of the senior design project by Ali Gebeşçe, Asu Tutku Gökçek, Gökçe Sevimli, Yakup Enes Güven at the Computer Engineering Department of Koç University, under the supervision of Assistant Professor Gözde Gül Şahin. Subsequent enhancements were made by Ali Gebeşçe and Assistant Professor Gözde Gül Şahin at [GGLab](https://gglab-ku.github.io/).
+- GECTurk WEB was developed as part of the senior design project by [Ali Gebeşçe](https://github.com/aligebesce), [Asu Tutku Gökçek](https://github.com/AsuTutkuGokcek), [Gökçe Sevimli](https://github.com/gokcesevimli), [Yakup Enes Güven](https://github.com/yguven17) at the Computer Engineering Department of Koç University, under the supervision of Assistant Professor Gözde Gül Şahin. Subsequent enhancements were made by Ali Gebeşçe and Assistant Professor Gözde Gül Şahin at [GGLab](https://gglab-ku.github.io/).
 
 - The GECTurk Model utilized by GECTurk WEB was developed by Atakan Kara, Farrin Marouf Safian, Andrew Bond, and Gözde Gül Şahin. For more details, please refer to the [paper](https://aclanthology.org/2023.findings-ijcnlp.26/) and [GitHub repository](https://github.com/GGLAB-KU/gecturk) of GECTurk.
 
