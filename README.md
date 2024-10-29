@@ -20,7 +20,7 @@ Your README is comprehensive and well-organized. Here are a few enhancements and
 
 ## Overview
 
-**GECTurk WEB** is an open-source web-based tool designed to detect and correct common grammatical and spelling errors in Turkish text. The system not only corrects mistakes but also provides explanations for each correction, helping users learn and understand Turkish grammatical rules better. The platform is accessible both online and offline, making it a flexible tool for native speakers and second language learners alike. You can try out GECTurk WEB at [www.gecturk.net](www.gecturk.net) online or set it up locally using the instructions below.
+**GECTurk WEB** is an open-source web-based tool designed to detect and correct common grammatical and spelling errors in Turkish text. The system not only corrects mistakes but also provides explanations for each correction, helping users learn and understand Turkish grammatical rules better. The platform is accessible both online and offline, making it a flexible tool for native speakers and second language learners alike. You can try out GECTurk WEB at [www.gecturk.net](https://www.gecturk.net/) online or set it up locally using the instructions below.
 
 <p align="center">
 <img src="ui_screenshot.png" width="100%">
