@@ -1,7 +1,3 @@
-Your README is comprehensive and well-organized. Here are a few enhancements and revisions to improve clarity and readability:
-
----
-
 # GECTurk WEB: An Explainable Online Platform for Turkish Grammatical Error Detection and Correction
 
 ## Table of Contents
